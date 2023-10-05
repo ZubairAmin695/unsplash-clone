@@ -18,15 +18,17 @@ function App() {
   }
   return (
     <div className="App">
+      <div className="mydiv1">Unsplash.co</div>
       <div className="mydiv">
-        <span>Search:</span>
+        <span className="search">Search:</span>
         <input
         style={{width:"60%"}}
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
+          className="input"
         />
-        <button onClick={()=>fetchImages()}>Send</button>
+        <button className="btn" onClick={()=>fetchImages()}>Send</button>
      
       
       </div>

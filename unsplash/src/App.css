@@ -1,15 +1,44 @@
 .App {
   text-align: center;
+ 
 }
 
 .mydiv{
   display: flex;
   justify-content: space-around;
   margin: 10px 7%;
-  box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px rgb(255, 255, 255);
   padding: 10px;
+  border-radius: 8px;
+}
+.mydiv1{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
 }
 
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 .gallery{
   display:flex;
   flex-wrap: wrap;
@@ -20,3 +49,33 @@
   width:30%;
   margin: 10px;
 }
+
+.btn{
+  background-color: rgb(255, 255, 255);
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  /* padding: 5px; */
+  border-radius: 5px;
+  /* font-size: medium; */
+}
+
+.search{
+  color: blueviolet;
+  /* font-size: medium; */
+  font-weight: 700;
+}
+.input{
+  border-radius: 7px;
+  padding: 3px;
+  border: 1px solid blueviolet;
+}
+
+input:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+}
+
+input:hover {
+  background-color: #ededed; /* Change background color on hover */
+}
+ 
